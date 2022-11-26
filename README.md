@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="img/Netlinkler_Official_Logo.png" alt="Project logo"></a>
-</p>
-
 <h3 align="center">Attendance Tracking APP using Reactjs and Laravel</h3>
 
 <div align="center">
