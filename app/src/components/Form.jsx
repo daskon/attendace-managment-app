@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import * as XLSX from 'xlsx'
 import { createRecord } from '../services/formRequest';
-
+import { useNavigate } from 'react-router-dom';
 const Form = () => {
 
     const [excelFile, setExcelFile] = useState(null);
     const [excelFileError, setExcelFileError] = useState(null);
     const [excelData, setExcelData] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
       if(excelData != null) {
@@ -53,6 +54,10 @@ const Form = () => {
         }
     }
 
+    const handleSubmitBtn = () => {
+      navigate('/list');
+    }
+
   return (
     <div>
         <header className="App-header">
@@ -72,7 +77,8 @@ const Form = () => {
                <div className='text-danger'
                  style={{marginTop:5+'px', color: 'red'}}>{excelFileError}
                 </div>}
-              <button type='submit' className='btn btn-success'>Submit</button>
+              <button type='submit' className='btn btn-success'
+                      onClick={handleSubmitBtn}>SUBMIT</button>
           </div>
         </form>
       </div>

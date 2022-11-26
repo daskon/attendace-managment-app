@@ -3,9 +3,16 @@ import React from 'react'
 
 export const createRecord = async (data) => {
   try {
-    //const excelData = JSON.stringify(data);
-    const result = await axios.post(process.env.REACT_APP_STORE_EXCEL,data);
-    console.log(result.data);
+    await axios.post(process.env.REACT_APP_API + '/store',data);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+export const getAttentdance = async () => {
+  try{
+    const result = await axios.get(process.env.REACT_APP_API + '/find');
+    return result.data;
   } catch (err) {
     console.log(err);
   }

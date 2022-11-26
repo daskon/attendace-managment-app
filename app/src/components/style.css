@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #3fc3bc;
+}
+
+th {
+  background-color: #068f96;
+  color: white;
+}
+
+button {
+  background-color: #10667e;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+}

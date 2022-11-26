@@ -30,7 +30,7 @@ class AttendanceController extends Controller
                 ];
             }
             Attendance::insert($data);
-            return $data;
+            return response()->json('Record added successfully');
         } catch (\Illuminate\Database\QueryException $exception) {
             return $exception->errorInfo;
         }
@@ -62,5 +62,16 @@ class AttendanceController extends Controller
         $chkOut = strtotime($to);
         $difference = round(abs($chkIn - $chkOut) / 3600, 2);
         return $difference;
+    }
+
+    /**
+     * get all attendance
+     *
+     * @return void
+     */
+    public function allAttendace()
+    {
+        $result = Attendance::all();
+        return $result;
     }
 }
