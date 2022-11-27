@@ -35,8 +35,13 @@ php artisan serve
 ```
 
 ```
-Admin view : http://127.0.0.1:3000
+Front page : http://127.0.0.1:3000
+Front page : http://127.0.0.1:3000/tasktwo
 ```
+
+### Testing
+
+Please use the given excel file format for testing. (excel folder)
 
 ## Built Using <a name = "built_using"></a>
 
