@@ -36,7 +36,7 @@ php artisan serve
 
 ```
 Front page : http://127.0.0.1:3000
-Front page : http://127.0.0.1:3000/tasktwo
+Chalenge 2 : http://127.0.0.1:3000/tasktwo
 ```
 
 ### Testing
