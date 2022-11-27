@@ -18,7 +18,21 @@
 
 ## About <a name = "about"></a>
 
-Attendance tracking app has developed using latest version of Reactjs 18 along with Laravel back-end.
+Attendance tracking app has developed using latest version of Reactjs 18 along with Laravel 9 back-end.
+
+### .env modifications
+
+# React app (cd app)
+```
+REACT_APP_API=http://localhost:8000/api
+```
+
+# Laravel app (cd api)
+```
+DB_DATABASE={set the database name}
+DB_USERNAME={set DB_USERNAME}
+DB_PASSWORD={set DB_PASSWORD}
+```
 
 ### Installing
 
@@ -30,6 +44,7 @@ npm start
 ```
 cd api
 composer install
+php artisan key:generate
 php artisan migrate
 php artisan serve
 ```
